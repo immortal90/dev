@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 3 challenges</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      @import url("css/common.css");
+
+      :root {
+        --bgColor: limegreen;
+      }
+
+      body {
+        background: var(--bgColor);
+      }
+    </style>
+    <!-- Змінна --bgColor визначена в контексті елемента <div>.
+         Таким чином, вона буде видимою тільки в межах цього елемента та йому вкладених елементів.
+        Щоб змінна --bgColor була видимою для body, ми можемо визначити її в контексті кореневого елемента html-->
+  </head>
+  <body>
+    <h2>Сторінка Вікіпедії для мови CSS</h2>
+    <iframe
+      src="https://uk.wikipedia.org/wiki/CSS"
+      title="Сторінка Вікіпедії для мови CSS"
+    ></iframe>
+    <p style="color: blue">This is my paragraph.</p>
+    <!-- Текст буде мати синій колір через визначення атрибуту style в тезі p. -->
+
+    <p>Звичайний, нудний абзац. Намагайтеся не заснути.</p>
+    <p class="exciting">
+      The most exciting paragraph on the page. One of a kind!
+    </p>
+
+    <div class="exciting">
+      The most exciting paragraph on the page. One of a kind!
+    </div>
+
+    <style>
+      .exciting {
+        background: #f69d3c;
+        border: 1px solid #696969;
+        padding: 10px;
+      }
+    </style>
+
+    <div>
+      <h3>Div 1</h3>
+      <p>Paragraph 1</p>
+    </div>
+
+    <div>
+      <h3>Div 2</h3>
+      <p>Paragraph 2</p>
+    </div>
+    <footer>
+      <section>
+        <div>
+          <h2>About</h2>
+          <ul>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Customers</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Resources</h2>
+          <ul>
+            <li><a href="#">Docs</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">eBooks</a></li>
+            <li><a href="#">Webinars</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2>Contact</h2>
+          <ul>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Sales</a></li>
+            <li><a href="#">Advertise</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <ul>
+          <li><a href="#">Terms &amp; Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <p>&copy; 2024 Copyright Shopaholic Inc.</p>
+      </section>
+    </footer>
+  </body>
+</html>
