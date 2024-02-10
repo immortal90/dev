@@ -1,4 +1,38 @@
+@import url("common.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
+html {
+  --primary-text-color: #000;
+  --primary-bg-color: #fff;
+}
+
+footer {
+  --footer-text-color: #fff;
+  --fuuter-bg-color: #000;
+}
+
 body {
-  color: var(--primary-text-color);
-  background: var(--primary-bg-color);
+  font-family: var(--primary-font-family);
+  font-size: var(--primary-font-size);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 1.45rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+}
+
+.list-unstyled {
+  list-style: none;
+}
+
+.footer-social {
 }
