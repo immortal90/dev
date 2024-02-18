@@ -1,0 +1,34 @@
+.negative {
+  background: linear-gradient(
+    to left,
+    #add8e6 -50%,
+    #6495ed -10%,
+    #0000ff 0%,
+    #0000ff 100%,
+    #000080 150%
+  );
+  padding: 20px;
+  color: white;
+}
+
+.percents {
+  background: linear-gradient(
+    to bottom,
+    #98fb98 2em,
+    #90ee90 4em,
+    #3cb371 8em,
+    #2e8b57 16em,
+    #228b22 32em,
+    #008000 64em,
+    #006400 128em
+  );
+  padding: 20px;
+  color: white;
+}
+
+.radial {
+  background: radial-gradient(ellipse at top, orange, transparent),
+    radial-gradient(ellipse at bottom, red, transparent);
+  padding: 20px;
+  color: white;
+}
