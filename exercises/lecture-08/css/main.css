@@ -1,0 +1,58 @@
+.box {
+  width: 300px;
+  padding: 10px;
+  border: dashed 2px green;
+}
+/*
+Ширина елемента .box = 300px + 20px + 2 * 2px = 324px
+*/
+
+.first-box {
+  width: 200px;
+  height: 100px;
+  border: 8px solid blue;
+  padding: 20px;
+  background: yellow;
+}
+/*
+Ширина елемента .first-box = 200px + 2 * 20px + 2 * 8px = 256px
+Висота елемента .first-box = 100px + 2 * 20px + 2 * 8px = 156px
+*/
+
+.second-box {
+  width: 200px;
+  height: 100px;
+  border: 8px solid blue;
+  background: yellow;
+}
+/*
+Ширина елемента .second-box = 200px + 2 * 8px = 216px
+Висота елемента .second-box = 100px + 2 * 8px = 116px
+*/
+
+div {
+  box-sizing: content-box;
+  width: 200px;
+  border: 8px solid blue;
+  padding: 20px;
+  background: yellow;
+}
+/*
+Ширина елемента div = 200px
+*/
+
+div {
+  box-sizing: border-box;
+  width: 200px;
+  border: 8px solid blue;
+  padding: 20px;
+  background: yellow;
+}
+/*
+Ширина контенту елемента div = 200px - (20px + 20px) - (8px + 8px) = 144px
+*/
+
+h1 {
+  display: inline-block;
+  word-wrap: break-word;
+}
