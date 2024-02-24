@@ -7,6 +7,16 @@
     "footer footer footer";
 }
 
+@media screen and (max-width: 786px) {
+  .grid-container {
+    grid-template-areas:
+      "header header"
+      "sidebar sidebar"
+      "main main"
+      "footer footer";
+  }
+}
+
 .header {
   grid-area: header;
 }
