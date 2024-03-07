@@ -1,0 +1,129 @@
+!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //let x = 3;
+      //let y = 4;
+
+      //x == 3; //true
+      //x === "3"; //false
+      //x != 5; //true
+      //x !== "5"; //true
+      //x !== 3; //false
+      //y > 5; //false
+      //y >= 3; //true
+      //y < 5; //true
+      //y <= 2; //false
+      //1 == true; //true
+      //null == undefined; //true
+      //NaN == NaN; //false
+
+      let x = 3;
+      let y = 4;
+      let z = 5;
+
+      x ||= y; //3
+      x || (y = z); //3
+      x &&= y; //4
+      x && (y = z); //5
+      x ??= y; //4
+      x ?? (y = z); //4
+
+      function guessNumber() {
+        const secretNumber = 3;
+        const guess = parseInt(prompt("Guess the number: "));
+
+        if (guess === secretNumber) {
+          alert("Congratulations, You did it!");
+        } else if (guess > secretNumber) {
+          alert("The number is too long");
+        } else {
+          alert("The number is short");
+        }
+      }
+
+      guessNumber();
+
+      function checkDayOfWeek() {
+        const day = prompt("Enter the day of the week: ").toLowerCase();
+
+        switch (day) {
+          case "понеділок":
+          case "monday":
+            alert("Start of the work week!");
+            break;
+          case "п'ятниця":
+          case "friday":
+            alert("End of the work week!");
+            break;
+          default:
+            alert("A regular day");
+        }
+      }
+
+      checkDayOfWeek();
+
+      function checkDayOfWeek() {
+        const day = prompt("Enter the day of the week: ").toLowerCase();
+
+        if (day === "понеділок" || day === "monday") {
+          alert("Start of the work week!");
+        } else if (day === "п'ятниця" || day === "friday") {
+          alert("End of the work week!");
+        } else {
+          alert("A regular day");
+        }
+      }
+
+      checkDayOfWeek();
+
+      function assignGrade(score) {
+        let grade;
+        if (score < 50) {
+          grade = "F";
+        } else if (score < 70) {
+          grade = "D";
+        } else if (score < 80) {
+          grade = "C";
+        } else if (score < 90) {
+          grade = "B";
+        } else {
+          grade = "A";
+        }
+        return grade;
+      }
+
+      const score = parseInt(prompt("Enter the score: "));
+      const studentGrade = assignGrade(score);
+      alert("Student's grade is: " + studentGrade);
+
+      function assignGrade(score) {
+        return score < 50
+          ? "F"
+          : score < 70
+          ? "D"
+          : score < 80
+          ? "C"
+          : score < 90
+          ? "B"
+          : "A";
+      }
+
+      const scoretwo = parseInt(prompt("Enter the score: "));
+      const studentGradetwo = assignGrade(scoretwo);
+      alert("Student's grade is: " + studentGradetwo);
+
+      let firstName = null;
+      let lastName = undefined;
+      let username = firstName || lastName || "Guest";
+
+      console.log(username);
+      s;
+    </script>
+  </body>
+</html>
