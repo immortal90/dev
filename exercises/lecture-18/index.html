@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function checkAge(age) {
+        if (age > 18) {
+          return true;
+        }
+        alert("Access denied for users under 18 years old");
+        return confirm("Did parents allow you?");
+      } // Без else також працюватиме функція. Різниці немає, тому що вони обидві вмкористовують той самий блок if для перевірки умови.
+
+      function checkAge(age) {
+        return age > 18 ? true : confirm("Did parents allow you?");
+      }
+
+      function checkAge(age) {
+        return age > 18 || confirm("Did parents allow you?");
+      } // Ні, дужок навколо age > 18 непотрібно
+
+      function min(a, b) {
+        if (a < b) {
+          return a;
+        } else if (a > b) {
+          return b;
+        } else {
+          return undefined;
+        }
+      }
+
+      function min(a, b) {
+        return a < b ? a : b;
+      }
+
+      function pow(x, n) {
+        if (n < 1 || !Number.isInteger(n)) {
+          return "Ступінь n має бути натуральним цілим числом";
+        }
+        let result = 1;
+        for (let i = 0; i < n; i++) {
+          result *= x;
+        }
+        return result;
+      }
+
+      let x = +prompt("Введіть число x:", "");
+      let n = +prompt("Введіть ступінь n (ціле натуральне число):", "");
+
+      let result = pow(x, n);
+
+      const ask = function (question, yes, no) {
+        if (confirm(question)) yes();
+        else no();
+      };
+
+      function A() {
+        console.log("A was called");
+        return undefined;
+      }
+      function B() {
+        console.log("B was called");
+        return false;
+      }
+      function C() {
+        console.log("C was called");
+        return "foo";
+      }
+
+      console.log(A(), C());
+      console.log(B(), C());
+    </script>
+  </body>
+</html>
