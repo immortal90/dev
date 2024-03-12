@@ -128,3 +128,19 @@ console.log(substring2);
 
 let sentenceSecond =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in sapien eu velit eleifend ullamcorper eget vitae nulla. Aenean euismod purus sed neque dictum, nec lobortis ante faucibus.";
+
+function truncateText(sentence) {
+  if (sentence.length > 50) {
+    return sentence.substring(0, 50) + "...";
+  } else {
+    return sentence;
+  }
+}
+
+function truncateText(sentence) {
+  if (sentence.length > 50) {
+    return sentence.substr(0, 50) + "...";
+  } else {
+    return sentence;
+  }
+}
