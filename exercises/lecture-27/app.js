@@ -1,5 +1,6 @@
 const ul = document.querySelector("ul");
 const input = document.getElementById("item");
+let itemsArray;
 
 function addTask(text) {
   let newTask = document.createElement("li");
@@ -24,7 +25,6 @@ function del() {
   ul.innerHTML = "";
 }
 
-let itemsArray;
 const storedItems = localStorage.getItem("items");
 if (storedItems) {
   itemsArray = JSON.parse(storedItems);
@@ -33,7 +33,8 @@ if (storedItems) {
 }
 console.log(itemsArray);
 
-let tasks = [];
-tasks.forEach((task) => {
-  addTask(task);
-});
+if (itemsArray.length > 0) {
+  itemsArray.forEach((task) => {
+    addTask(task);
+  });
+}
