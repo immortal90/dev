@@ -1,0 +1,10 @@
+{
+  "posts": [
+    { "id": 1, "title": "Post 1", "body": "Body of post 1", "userId": 1 },
+    { "id": 2, "title": "Post 2", "body": "Body of post 2", "userId": 2 }
+  ],
+  "users": [
+    { "id": 1, "name": "User 1" },
+    { "id": 2, "name": "User 2" }
+  ]
+}
